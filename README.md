@@ -6,5 +6,6 @@
 </h2>
 
 ## Dia 1 - Criação do repositório- 16/08/22 ✅
+## Dia 2 - Hello World- 17/08/22 ✅
 
 
