@@ -1,0 +1,56 @@
+body{
+    margin:0;
+    display:flex;
+    justify-content: center;
+    place-items:center;
+    height:100vh;
+    background-color:#000;
+  }
+  :root{
+    --color-primary: #e4405f;
+    --text-color: #fff;
+    --color-secundary: #00c0fe;
+
+  }
+  h1{
+    color: white;
+  }
+  .corpo-calc{
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    background-color: red;
+    border-radius: 10px;
+
+  }
+  .num{
+    background-color: var(--color-primary);
+    color: var(--text-color);
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50px;
+    font-size: 2rem;
+  }
+  .operadores, .atb{
+    background-color: var(--color-secundary);
+    color: var(--text-color);
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50px;
+    font-size: 2rem; 
+  }
+  .visor{
+    width: 95%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-align: end;
+    border-radius: 10px;
+  }

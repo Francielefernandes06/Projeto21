@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
+    <title>Calculadora</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="ig"></div>
+    <div class="corpo-calc">
+        <h1>Calculadora</h1>
+        <input type="text" class="visor" id="visor" readonly="true">
+        <table>
+            <tr>
+                <td><input type="button" class="btn atb" value="C" onclick="limpar()"> </td>
+                <td><input type="button" class="btn atb" value="(" onclick="preencher('(');"> </td>
+                <td><input type="button" class="btn atb" value=")" onclick="preencher(')');"></td>
+                <td><input type="button" class="btn atb" value="←" onclick="excluir();"> </td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn num" value="7" onclick="preencher(7);"> </td>
+                <td><input type="button" class="btn num" value="8" onclick="preencher(8);"> </td>
+                <td><input type="button" class="btn num" value="9" onclick="preencher(9);"></td>
+                <td><input type="button" class="btn operadores" value="x" onclick="preencher('x');"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn num" value="4" onclick="preencher(4);"></td>
+                <td><input type="button" class="btn num" value="5" onclick="preencher(5);"></td>
+                <td><input type="button" class="btn num" value="6" onclick="preencher(6);"></td>
+                <td><input type="button" class="btn operadores" value="÷" onclick="preencher('÷');"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn num" value="1" onclick="preencher(1);"></td>
+                <td><input type="button" class="btn num" value="2" onclick="preencher(2);"></td>
+                <td><input type="button" class="btn num" value="3" onclick="preencher(3);"></td>
+                <td><input type="button" class="btn operadores" value="-" onclick="preencher('-');"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn num" value="0" onclick="preencher(0);"></td>
+                <td><input type="button" class="btn atb" value="." onclick="preencher('.');"></td>
+                <td><input type="button" class="btn-span atb" value="√" onclick="razQ();"></td>
+                <td><input type="button" class="btn-span operadores" value="+" onclick="preencher('+');"></td>
+            </tr>
+
+        </table>
+        <div class="igual">
+            <input type="button" class="btn-span atb" value="%" onclick="percent();">
+            <input type="button" class="btn igualdade operadores" value="=" onclick="calcular();">
+        </div>
+        <p>By Franciele Fernandes</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
